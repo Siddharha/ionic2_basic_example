@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar color = "creative_blue">
+    <ion-title>
+      Creative Lizard
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+<!-- Inputs-->
+  <ion-list>
+
+  <ion-item>
+    <ion-input type="text" placeholder="Username" [(ngModel)]="name">
+    	
+    </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input type="password" placeholder="Password" [(ngModel)]="pass">
+    	
+    </ion-input>
+  </ion-item>
+
+</ion-list>
+<!--Sign Up-->
+<p class="SignUp" (click)="clkSignUp();">Sign Up</p>
+<!-- Buttons-->
+<button ion-button color="creative_blue" class="buttonSubmit" (click)="btnClk();">Submit</button>
+</ion-content>
